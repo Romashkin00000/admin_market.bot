@@ -1,5 +1,5 @@
 # main.py
-from markTelegram import bot
+from telegram import bot
 import telebot
 from db import db
 
