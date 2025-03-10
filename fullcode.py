@@ -19,6 +19,8 @@ user_auth_status = {}
 # Пароль для авторизации
 idadmin = 1075470938
 
+
+
 # Класс для работы с базой данных
 class Database:
     def __init__(self, host, user, password, database):
@@ -28,6 +30,7 @@ class Database:
             user=user,
             password=password,
             database=database
+            
         )
         self.cursor = self.connection.cursor()
 
