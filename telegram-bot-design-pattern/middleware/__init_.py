@@ -1,0 +1,1 @@
+from .middleware import check_auth

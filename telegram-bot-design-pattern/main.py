@@ -1,6 +1,5 @@
-"""Bot start file"""
 import os
-from env import ENV
+from env import ENV as env
 from core import Bot
 
 try:
@@ -9,5 +8,5 @@ except ImportError:
     DB_CONNECTION = None
 
 if __name__ == "__main__":
-    bot = Bot(env=ENV, db=DB_CONNECTION)
+    bot = Bot(env=env, db=DB_CONNECTION)
     bot.run()
